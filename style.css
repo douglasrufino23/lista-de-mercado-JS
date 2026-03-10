@@ -1,0 +1,124 @@
+    body {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: aqua;
+        /* No celular usa 95% da tela, no PC limita a 600px */
+        width: 95%;
+        max-width: 600px; 
+        padding-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    section h2, input {
+        width: 85%; /* Aumentado para ocupar melhor o espaço */
+        margin: 5px 0;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    select, button {
+        width: fit-content;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    /* Container dos botões e select */
+    div {
+        width: 85%;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        background-color: black;
+        border: none;
+        height: 1px;
+        width: 100%;
+    }
+
+    #filtros {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Faz os filtros pularem linha se não couberem */
+        font-size: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+        gap: 0;
+    }
+
+    #filtros input {
+        margin: 5px;
+        width: 20px; /* Reduzido para não empurrar o texto */
+        height: 20px;
+    }
+
+    #filtros p {
+        margin: 0 10px 0 0;
+    }
+
+    table {
+        width: 95%;
+        border-collapse: collapse; /* Essencial para tabelas */
+        
+        
+    }
+
+    /* Ajuste de colunas por porcentagem para ser responsivo */
+    .check {
+        text-align: center;
+    
+    }
+
+    .check input {
+        width: 20px;
+        height: 20px;
+    }
+   
+
+    .item {
+        width: 50%;
+        word-break: break-word; /* Evita que nomes longos quebrem o layout */
+        text-align: center;
+    }
+    
+
+    .categoria {
+        text-align: center;
+        width: 30%;
+        font-size: 14px;
+    }
+
+    .excluir {
+        text-align: center;
+        width: 10%;
+    }
+
+    .excluir button {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 8px;
+    }
+    
+    
